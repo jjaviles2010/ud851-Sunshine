@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Humidity  -->
+    <TextView
+        android:id="@+id/humidity"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginStart="68dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewHumidity"
+        app:layout_constraintStart_toEndOf="@+id/textViewHumidity"
+        tools:text="38%" />
+
+    <!-- Pressure  -->
+    <TextView
+        android:id="@+id/pressure"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="68dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintEnd_toEndOf="@+id/humidity"
+        app:layout_constraintHorizontal_bias="0.245"
+        app:layout_constraintStart_toEndOf="@+id/textViewPressure"
+        app:layout_constraintTop_toBottomOf="@+id/humidity"
+        tools:text="995 hPa" />
+
+    <!-- Wind  -->
+    <TextView
+        android:id="@+id/wind"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="128dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewWind"
+        app:layout_constraintTop_toBottomOf="@+id/pressure"
+        tools:text="4km/h NW" />
+
+    <TextView
+        android:id="@+id/textViewHumidity"
+        android:layout_width="101dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="44dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewPressure"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Humidity" />
+
+    <TextView
+        android:id="@+id/textViewPressure"
+        android:layout_width="114dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/pressure"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Pressure" />
+
+    <TextView
+        android:id="@+id/textViewWind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="52dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPressure"
+        tools:text="Wind" />
+
+
+</android.support.constraint.ConstraintLayout>
+</layout>
