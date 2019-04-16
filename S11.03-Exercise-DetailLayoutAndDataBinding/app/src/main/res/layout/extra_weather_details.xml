@@ -49,9 +49,8 @@
     <TextView
         android:id="@+id/textViewHumidity"
         android:layout_width="101dp"
-        android:layout_height="26dp"
+        android:layout_height="22dp"
         android:layout_marginTop="44dp"
-        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/textViewPressure"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Humidity" />
@@ -62,7 +61,6 @@
         android:layout_height="26dp"
         android:layout_marginLeft="60dp"
         android:layout_marginStart="60dp"
-        android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/pressure"
         app:layout_constraintStart_toStartOf="parent"
         tools:text="Pressure" />
@@ -74,7 +72,6 @@
         android:layout_marginLeft="60dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="52dp"
-        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewPressure"
         tools:text="Wind" />
