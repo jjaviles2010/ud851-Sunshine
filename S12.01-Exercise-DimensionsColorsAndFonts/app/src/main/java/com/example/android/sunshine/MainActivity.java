@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements
         LoaderManager.LoaderCallbacks<Cursor>,
         ForecastAdapter.ForecastAdapterOnClickHandler {
 
-//  TODO (2) Add dimens.xml, create and use dimensions for Sunshine's layouts
+//  COMPLETED (2) Add dimens.xml, create and use dimensions for Sunshine's layouts
 
     private final String TAG = MainActivity.class.getSimpleName();
 
@@ -185,7 +185,7 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     /**
-     * Called by the {@link android.support.v4.app.LoaderManagerImpl} when a new Loader needs to be
+     * Called by the when a new Loader needs to be
      * created. This Activity only uses one loader, so we don't necessarily NEED to check the
      * loaderId, but this is certainly best practice.
      *
